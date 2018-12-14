@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if(!isset($_SESSION["id_number"])){
+    header("Location: index.php");
+    exit(); 
+}else{
+    echo "Welcome ".$_SESSION['id_number'];
+
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
