@@ -26,7 +26,7 @@ session_start();
     
     <div class="form-group">
                             <div class="g-recaptcha" data-sitekey="6Lf13IEUAAAAAKhxq5opFsX0Gbu-E65kd1If3iKa" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                            <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                            <input class="form-control" data-recaptcha="true" required data-error="Please complete the Captcha">
                             <div class="help-block with-errors"></div>
                         </div>
 
