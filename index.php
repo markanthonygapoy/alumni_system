@@ -13,6 +13,7 @@ session_start();
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link href="sign_in.css" rel="stylesheet">
     <script src="main.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body class="text-center">
   <form class="form-signin" method="post" action="verify.php">
@@ -22,6 +23,13 @@ session_start();
     <input type="text" name="idNumber" id="idNumber" class="form-control" placeholder="ID Number" required autofocus>
     <label for="birthDate" class="sr-only">Birthdate</label>
     <input type="date" name="birthDate" id="birthDate" class="form-control" placeholder="Birthdate" name="bday" min="1000-01-01" max="3000-12-31" class="form-control" required>
+    
+    <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6Lf13IEUAAAAAKhxq5opFsX0Gbu-E65kd1If3iKa" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                            <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                            <div class="help-block with-errors"></div>
+                        </div>
+
     <div class="form-group">
     <button class="btn btn-lg btn-primary btn-block" name="signIn" type="submit">Sign in</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
