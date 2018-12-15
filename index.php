@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>University of the Cordilleras Alumni Management System</title>
+    <title>Alumni System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"> -->
@@ -31,7 +31,7 @@ session_start();
     <input type="date" name="birthDate" id="birthDate" class="form-control" placeholder="Birthdate" name="bday" min="1000-01-01" max="3000-12-31" class="form-control" required>
     
     <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="6Lf13IEUAAAAAKhxq5opFsX0Gbu-E65kd1If3iKa"></div>
+                            <div class="g-recaptcha" data-sitekey="6Lf13IEUAAAAAKhxq5opFsX0Gbu-E65kd1If3iKa" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
                             <input id="rcaptcha" name = "captcha" class="form-control" data-recaptcha="true" required data-error="Please complete the Captcha">
                             <!-- <div class="help-block with-errors"></div> -->
         </div>
