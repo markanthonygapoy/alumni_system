@@ -12,6 +12,12 @@ session_start();
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"> -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link href="sign_in.css" rel="stylesheet">
+    <style type="text/css">
+    #rcaptcha{
+        opacity: 0;
+    position: absolute;
+    }
+    </style>
     <script src="main.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
@@ -26,7 +32,7 @@ session_start();
     
     <div class="form-group">
                             <div class="g-recaptcha" data-sitekey="6Lf13IEUAAAAAKhxq5opFsX0Gbu-E65kd1If3iKa"></div>
-                            <input name = "captcha" class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                            <input id="rcaptcha" name = "captcha" class="form-control" data-recaptcha="true" required data-error="Please complete the Captcha">
                             <!-- <div class="help-block with-errors"></div> -->
         </div>
 
