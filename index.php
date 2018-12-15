@@ -25,8 +25,8 @@ session_start();
     <input type="date" name="birthDate" id="birthDate" class="form-control" placeholder="Birthdate" name="bday" min="1000-01-01" max="3000-12-31" class="form-control" required>
     
     <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="6Lf13IEUAAAAAKhxq5opFsX0Gbu-E65kd1If3iKa" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                            <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                            <div class="g-recaptcha" data-sitekey="6Lf13IEUAAAAAKhxq5opFsX0Gbu-E65kd1If3iKa"></div>
+                            <input name = "captcha" class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
                             <!-- <div class="help-block with-errors"></div> -->
         </div>
 
